@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Catálogo de Filmes | Tailwind CSS</title>
+</head>
+
+<body class="bg-zinc-950">
+    <div class="w-full h-screen flex items-center justify-center">
+        <div class="flex flex-col gap-6">
+            <div class="flex">
+                <!-- Link para reotrnar a página inicial -->
+                <a href="#" class="text-zinc-400 flex items-center gap-4 hover:text-zinc-200">
+                    <div
+                        class="w-10 h-10 bg-zinc-900 rounded-lg flex items-center justify-center outline outline-zinc-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-arrow-left-icon lucide-arrow-left">
+                            <path d="m12 19-7-7 7-7" />
+                            <path d="M19 12H5" />
+                        </svg>
+                    </div>
+                    Votlar para a home
+                </a>
+            </div>
+
+            <div class="w-[440px] bg-zinc-900 rounded-xl outline outline-zinc-800">
+                <div class="p-6">
+                    <div class="flex flex-col items-center gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="teste w-14 h-14 bg-red-600 rounded-xl flex items-center justify-center">
+                                <h1 class="text-lg font-bold text-white">CF</h1>
+                            </div>
+
+                            <div>
+                                <h1 class="text-lg font-bold text-white">CineFilmes</h1>
+                                <span class="text-zinc-500">Catálogo de filmes</span>
+                            </div>
+                        </div>
+                        <span class="text-yellow-500 uppercase font-semibold">Área administrativa</span>
+                        <h1 class="text-3xl text-white font-bold">Entrar no catálogo</h1>
+                        <span class="text-zinc-400 text-center">Acesse a área administrativa para gerenciar os filmes do
+                            catálogo.</span>
+                    </div>
+                    <div class="mt-8 flex flex-col gap-4">
+                        <form action="#" class="text-zinc-300 flex flex-col gap-4">
+                            <div class="flex flex-col">
+                                <label for="email" class="font-semibold">E-mail</label>
+                                <input
+                                    class="mt-2 outline outline-zinc-700 bg-black py-2 px-4 rounded-lg placeholder:text-zinc-500 focus:outline-red-500"
+                                    type="email" name="email" id="email" placeholder="example@email.com">
+                            </div>
+                            <div class="flex flex-col">
+                                <label for="password" class="font-semibold">Senha</label>
+                                <input
+                                    class="mt-2 outline outline-zinc-700 bg-black py-2 px-4 rounded-lg placeholder:text-zinc-500 focus:outline-red-500"
+                                    type="password" name="password" id="password" placeholder="Digite sua senha">
+                            </div>
+                            <button type="submit"
+                                class="bg-red-600 p-2 rounded-lg mt-3 font-bold cursor-pointer hover:bg-red-500 transition">Entrar</button>
+                        </form>
+                        <span class="text-zinc-400 text-center text-xs">Use suas credenciais de administrador para
+                            continuar.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
